@@ -14,7 +14,7 @@ FinanceGPT is a new app that helps you take control of your finances. It offers 
     - [How to run the project](#how-to-run-the-project)
   - [Screenshots](#screenshots)
   - [How to use the application](#how-to-use-the-application)
-  - [Use cases and further enhanchements](#use-cases-and-further-enhanchements)
+  - [Use cases and further enhancements](#use-cases-and-further-enhanchements)
   - [Contributing](#contributing)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
@@ -100,18 +100,18 @@ You should now see the AI-powered FinanceGPT  application running with Next.js.
 4. Set financial goals and receive AI-powered strategies
 5. Use the chatbot for financial guidance
 
-## Use cases and further enhanchements
+## Use cases and further enhancements
 1. Integrate with real-time financial data APIs to provide up-to-date market information and analysis.
 2. Implement a document upload feature for analyzing financial statements and tax returns.
 3. Create interactive financial education modules with quizzes and rewards.
-4. Implement a feature using which users can access older chats
+4. Implement a feature that allows users to access older chats.
 5. Add support for cryptocurrency tracking and investment advice.
 6. etc, etc, etc...
 
 
 ## Contributing
 
-We love contributions! Here's how you can help make the FinanceGPT even better:
+We love contributions! Here's how you can help make FinanceGPT even better:
 
 1. Fork the project (`gh repo fork https://github.com/0xmetaschool/ai-finance-advisor.git`)
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
