@@ -62,13 +62,11 @@ export default function Home() {
       const isFreshLogin = sessionStorage.getItem('isFreshLogin') === 'true';
       
       if (isFreshLogin) {
-        console.log('Fresh login detected - starting new chat');
         setLocalMessages([]);
         dispatch(resetChat());
         
       } 
       else {
-        console.log('Existing session - fetching chat history');
         const fetchChatHistory = async () => {
           try {
             const history = await dispatch(getChatHistory()).unwrap();
