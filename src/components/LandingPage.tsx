@@ -26,7 +26,7 @@ export default function LandingPage() {
             </Text>
           </Heading>
           <Text color={'gray.600'} fontSize={{ base: 'md', md: 'lg' }} maxW="2xl">
-            AI Powered FinanceGuru helps you take control of your financial future. Get personalized advice,
+            AI Powered FinanceGPT helps you take control of your financial future. Get personalized advice,
             set goals, and check your financial snapshot with the power of artificial intelligence.
           </Text>
           <Link href="/register" passHref>
