@@ -1,7 +1,7 @@
 # **FinanceGPT**
 
 FinanceGPT helps you take control of your finances. It offers personalized financial advice, similar to consulting with a human advisor. With features like AI chat and goal planning, FinanceGPT helps you achieve your financial goals. 
-Built with Next.js and AI technology, this open-source template helps developers create their own financial advisory tools. As more people look for smart ways to manage their money, this template lets you build your own financial advisor app quickly and easily
+Built with Next.js and AI technology, this open-source template helps developers create their own financial advisory tools. As more people look for smart ways to manage their money, this template lets you build your own financial advisor app quickly and easily.
 
 ## Live Demo
 
