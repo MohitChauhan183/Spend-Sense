@@ -1,28 +1,11 @@
 # **FinanceGPT**
 
-FinanceGPT is a new app that helps you take control of your finances. It offers personalized financial advice, similar to consulting with a human advisor. With features like AI chat and goal planning, FinanceGPT helps you achieve your financial goals. Powered by Next.js and OpenAI's GPT-4, this app provides tailored advice based on your unique financial situation.
-
-## Table of Contents
-
-- [**FinanceGPT**](#financegpt)
-  - [Table of Contents](#table-of-contents)
-  - [Live Demo](#live-demo)
-  - [Features](#features)
-  - [Technologies Used](#technologies-used)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [How to run the project](#how-to-run-the-project)
-  - [Screenshots](#screenshots)
-  - [How to use the application](#how-to-use-the-application)
-  - [Use cases and further enhancements](#use-cases-and-further-enhanchements)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-  - [Contact](#contact)
+FinanceGPT helps you take control of your finances. It offers personalized financial advice, similar to consulting with a human advisor. With features like AI chat and goal planning, FinanceGPT helps you achieve your financial goals. 
+Built with Next.js and AI technology, this open-source template helps developers create their own financial advisory tools. As more people look for smart ways to manage their money, this template lets you build your own financial advisor app quickly and easily
 
 ## Live Demo
 
-Live demo - [FinanceGPT](https://finance-gpt-pi.vercel.app/)
+[https://finance-gpt-pi.vercel.app/](https://finance-gpt-pi.vercel.app/)
 
 ## Features
 
@@ -33,22 +16,16 @@ Live demo - [FinanceGPT](https://finance-gpt-pi.vercel.app/)
 
 ## Technologies Used
 
-- React.js with Chakra UI
-- Next.js
-- Database: MongoDB
+- Next.js and React for Frontend and BackendDatabase: MongoDB
 - AI Integration: OpenAI's GPT-4
 - State Management: Redux Toolkit
-- Authentication: JSON Web Tokens (JWT)
 
-## Getting Started
+## Use Cases
+- Integrate with real-time financial data APIs to provide up-to-date market information and analysis.
+- Implement a document upload feature to analyze financial statements and tax returns.
+- Create interactive financial education modules with quizzes and rewards.
 
-### Prerequisites
-
-- Next.js
-- MongoDB
-- OpenAI API key
-
-### How to run the project
+## Installation Steps
 
 **1. Clone the repository:**
 
@@ -90,7 +67,11 @@ You should now see the AI-powered FinanceGPT  application running with Next.js.
 
 ## Screenshots
 
-<img src="https://github.com/0xmetaschool/ai-finance-advisor/blob/main/public/images/FinanceGPT%201.png?raw=true" width="400" height="300"> <img src="https://github.com/0xmetaschool/ai-finance-advisor/blob/main/public/images/FinanceGPT%202.png?raw=true" width="400" height="300">
+<div style="float:left; display: flex; justify-content: space-between;">
+  <img src="https://github.com/0xmetaschool/finance-gpt/blob/main/public/images/finance-gpt-template-landing-page.png?raw=true" alt="FinanceGPT Template Landing Page screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/finance-gpt/blob/main/public/images/finance-gpt-template-home-page.png?raw=true" alt="FinanceGPT Template Home Page screenshot" style="width: 49%; border: 2px solid black;" />
+</div>
+
 
 ## How to use the application
 
@@ -99,14 +80,6 @@ You should now see the AI-powered FinanceGPT  application running with Next.js.
 3. Explore the financial snapshot dashboard
 4. Set financial goals and receive AI-powered strategies
 5. Use the chatbot for financial guidance
-
-## Use cases and further enhancements
-1. Integrate with real-time financial data APIs to provide up-to-date market information and analysis.
-2. Implement a document upload feature for analyzing financial statements and tax returns.
-3. Create interactive financial education modules with quizzes and rewards.
-4. Implement a feature that allows users to access older chats.
-5. Add support for cryptocurrency tracking and investment advice.
-6. etc, etc, etc...
 
 
 ## Contributing
@@ -123,11 +96,6 @@ We love contributions! Here's how you can help make FinanceGPT even better:
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/0xmetaschool/finance-gpt/blob/main/LICENSE) file for details.
 
-## Acknowledgments
-
-- OpenAI for providing the GPT-4 API
-- The Chakra UI team for their excellent React component library
 
 ## Contact
-
 Please open an issue in the GitHub repository for any queries or support.
