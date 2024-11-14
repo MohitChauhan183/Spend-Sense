@@ -63,8 +63,6 @@ npm run dev
 
 **6. Open your browser and navigate to `http://localhost:3000`**
 
-You should now see the AI-powered FinanceGPT  application running with Next.js.
-
 ## Screenshots
 
 <div style="float:left; display: flex; justify-content: space-between;">
