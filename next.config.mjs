@@ -4,16 +4,6 @@ const nextConfig = {
     eslint: {
       ignoreDuringBuilds: true,
     },
-    images: {
-      domains: ['metaschool.so'],
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'metaschool.so',
-          pathname: '/**',
-        },
-      ],
-  },
   }
   
   export default nextConfig;
