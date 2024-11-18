@@ -88,7 +88,7 @@ export default function LandingPage() {
           />
           <PricingCard
             title="Pro"
-            price="$29/month"
+            price="$20/month"
             features={['All Basic Features', 'Personalized Planning', 'Priority Support']}
             buttonText="Upgrade Now"
             buttonLink="/register"
