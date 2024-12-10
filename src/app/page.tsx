@@ -189,7 +189,7 @@ export default function Home() {
     <Box 
       bg={bgColor} 
       color={textColor} 
-      height="calc(100vh - 40px - 120px)"
+      height="calc(100vh - 150px - 120px)"
       position="fixed"
       top="70px"
       left="0"

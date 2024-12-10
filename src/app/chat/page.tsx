@@ -98,8 +98,8 @@ export default function Chatbot() {
 
   return (
     // Main container for the chatbot component
-    <Container maxW="container.xl" py={10}>
-      <VStack spacing={4} align="stretch" h="70vh">
+    <Container maxW="container.xl" py={10} minH="calc(100vh - 188px - 120px)">
+      <VStack spacing={4} align="stretch" h="calc(100vh - 188px - 160px)">
         <Heading>AI Financial Advisor</Heading>
         <Text>Ask me about financial planning, budgeting, or improving your financial health.</Text>
 
