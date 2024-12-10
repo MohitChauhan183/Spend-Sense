@@ -137,34 +137,89 @@ const FinancialSnapshot = () => {
   ];
 
   return (
-    <Container maxW="container.xl" py={10}>
-      <Heading mb={6}>Financial Snapshot</Heading>
+    <Container maxW="container.xl" py={12}>
+      <Box mb={10}>
+        <Heading size="2xl" mb={2}>Financial Snapshot</Heading>
+        <Box w="60px" h="4px" bg="black" mb={6} />
+      </Box>
       
       {!isEditing ? (
-        <VStack spacing={8} align="stretch">
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={6}>
-            <Stat>
-              <StatLabel>Net Worth</StatLabel>
-              <StatNumber>${netWorth.toLocaleString()}</StatNumber>
-            </Stat>
-            <Stat>
-              <StatLabel>Annual Income</StatLabel>
-              <StatNumber>${financialData.annualIncome.toLocaleString()}</StatNumber>
-            </Stat>
-            <Stat>
-              <StatLabel>Current Savings</StatLabel>
-              <StatNumber>${financialData.currentSavings.toLocaleString()}</StatNumber>
-            </Stat>
-            <Stat>
-              <StatLabel>Financial Health Score</StatLabel>
-              <StatNumber>{financialHealthScore}/100</StatNumber>
-            </Stat>
+        <VStack spacing={10} align="stretch">
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={8}>
+            <Box 
+              p={6} 
+              borderRadius="xl" 
+              boxShadow="lg" 
+              bg={useColorModeValue('white', 'gray.800')}
+              border="1px solid"
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
+              transition="transform 0.2s"
+              _hover={{ transform: 'translateY(-4px)' }}
+            >
+              <Stat>
+                <StatLabel fontSize="sm" color="gray.500" mb={2}>Net Worth</StatLabel>
+                <StatNumber fontSize="3xl">${netWorth.toLocaleString()}</StatNumber>
+              </Stat>
+            </Box>
+            <Box 
+              p={6} 
+              borderRadius="xl" 
+              boxShadow="lg" 
+              bg={useColorModeValue('white', 'gray.800')}
+              border="1px solid"
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
+              transition="transform 0.2s"
+              _hover={{ transform: 'translateY(-4px)' }}
+            >
+              <Stat>
+                <StatLabel fontSize="sm" color="gray.500" mb={2}>Annual Income</StatLabel>
+                <StatNumber fontSize="3xl">${financialData.annualIncome.toLocaleString()}</StatNumber>
+              </Stat>
+            </Box>
+            <Box 
+              p={6} 
+              borderRadius="xl" 
+              boxShadow="lg" 
+              bg={useColorModeValue('white', 'gray.800')}
+              border="1px solid"
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
+              transition="transform 0.2s"
+              _hover={{ transform: 'translateY(-4px)' }}
+            >
+              <Stat>
+                <StatLabel fontSize="sm" color="gray.500" mb={2}>Current Savings</StatLabel>
+                <StatNumber fontSize="3xl">${financialData.currentSavings.toLocaleString()}</StatNumber>
+              </Stat>
+            </Box>
+            <Box 
+              p={6} 
+              borderRadius="xl" 
+              boxShadow="lg" 
+              bg={useColorModeValue('white', 'gray.800')}
+              border="1px solid"
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
+              transition="transform 0.2s"
+              _hover={{ transform: 'translateY(-4px)' }}
+            >
+              <Stat>
+                <StatLabel fontSize="sm" color="gray.500" mb={2}>Financial Health Score</StatLabel>
+                <StatNumber fontSize="3xl">{financialHealthScore}/100</StatNumber>
+              </Stat>
+            </Box>
           </SimpleGrid>
 
-          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
-            <Box height="400px">
-              <Heading size="md" mb={4}>Monthly Expenses</Heading>
-              <ResponsiveContainer width="100%" height="100%">
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
+            <Box 
+              height="450px" 
+              p={6} 
+              borderRadius="xl" 
+              boxShadow="lg" 
+              bg={useColorModeValue('white', 'gray.800')}
+              border="1px solid"
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
+            >
+              <Heading size="md" mb={6}>Monthly Expenses</Heading>
+              <ResponsiveContainer width="100%" height="90%">
                 <PieChart>
                   <Pie
                     data={expenseData}
@@ -180,25 +235,69 @@ const FinancialSnapshot = () => {
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
-                  <Tooltip />
-                  <Legend />
+                  <Tooltip 
+                    contentStyle={{ 
+                      backgroundColor: useColorModeValue('white', 'gray.800'),
+                      border: '1px solid #ccc',
+                      borderRadius: '4px'
+                    }} 
+                  />
+                  <Legend verticalAlign="bottom" height={36} />
                 </PieChart>
               </ResponsiveContainer>
             </Box>
 
-            <Box height="400px">
-              <Heading size="md" mb={4}>Income vs Savings</Heading>
-              <ResponsiveContainer width="100%" height="100%">
+            <Box 
+              height="450px" 
+              p={8}
+              bg={useColorModeValue('white', 'gray.800')}
+              borderRadius="2xl"
+              boxShadow="0 4px 20px rgba(0, 0, 0, 0.05)"
+              position="relative"
+              overflow="hidden"
+            >
+              <Heading size="md" mb={8} fontWeight="medium" letterSpacing="-0.5px">Income vs Savings</Heading>
+              <ResponsiveContainer width="100%" height="85%">
                 <BarChart
                   data={incomeVsSavingsData}
-                  margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                  margin={{ top: 20, right: 30, left: 40, bottom: 5 }}
+                  barSize={60}
                 >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis scale="sqrt" domain={[0, 'dataMax']} />
-                  <Tooltip />
-                  <Legend />
-                  <Bar dataKey="value" fill="#82ca9d" />
+                  <CartesianGrid 
+                    strokeDasharray="3 3" 
+                    stroke={useColorModeValue('rgba(0,0,0,0.05)', 'rgba(255,255,255,0.05)')} 
+                    vertical={false}
+                  />
+                  <XAxis 
+                    dataKey="name" 
+                    stroke={useColorModeValue('gray.600', 'gray.400')}
+                    tickLine={false}
+                    axisLine={false}
+                  />
+                  <YAxis 
+                    stroke={useColorModeValue('gray.600', 'gray.400')}
+                    tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                    tickLine={false}
+                    axisLine={false}
+                    domain={[0, Math.max(financialData.annualIncome, financialData.currentSavings) * 1.1]}
+                  />
+                  <Tooltip 
+                    cursor={{ fill: 'rgba(0,0,0,0.02)' }}
+                    contentStyle={{ 
+                      backgroundColor: useColorModeValue('white', 'gray.800'),
+                      borderRadius: '12px',
+                      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+                      border: 'none',
+                      padding: '12px'
+                    }}
+                    formatter={(value: number) => [`$${value.toLocaleString()}`, 'Amount']}
+                  />
+                  <Bar 
+                    dataKey="value" 
+                    fill="#82ca9d"
+                    radius={[4, 4, 0, 0]}
+                    maxBarSize={80}
+                  />
                 </BarChart>
               </ResponsiveContainer>
             </Box>
