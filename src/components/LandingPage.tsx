@@ -430,7 +430,6 @@ export default function LandingPage() {
                           fill={candle.up ? "white" : "black"}
                           stroke="black"
                           strokeWidth="0.3"
-                          variants={candleVariants}
                           initial="initial"
                           animate="animate"
                           custom={i}
