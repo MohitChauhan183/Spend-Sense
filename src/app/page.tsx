@@ -140,6 +140,7 @@ export default function Home() {
       setIsTyping(true);
       sessionStorage.removeItem('isFreshLogin'); // Clear the flag
       try {
+        
         const response = await dispatch(sendMessage({ message: userMessage.content, area: currentTopic || 'general' })).unwrap();
         setIsTyping(false);
         setLocalMessages(prev => [...prev, { role: 'assistant', content: response }]);
@@ -201,7 +202,7 @@ export default function Home() {
         {localMessages.length === 0 ? (
           <Flex direction="column" align="center" justify="center" h="100%" py={8}>
             <VStack spacing={6} mb={8}>
-              <Heading size="lg" textAlign="center">Welcome to FinanceGPT</Heading>
+              <Heading size="lg" textAlign="center">Welcome to SpendSense</Heading>
               <TypewriterText
                 text="How can I help you today?"
                 fontSize="xl"

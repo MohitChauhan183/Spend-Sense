@@ -22,7 +22,7 @@ export default function RootLayout({
               <Box flex="1">
                 {children}
               </Box>
-              <Footer />
+              {/* <Footer /> */}
             </Flex>
           </ChakraProvider>
         </ReduxProvider>

@@ -49,6 +49,8 @@ export async function POST(req: Request) {
     const context = chat.messages.slice(-10); 
 
     // Generate AI response using the provided context
+    console.log(user,message,area);
+    
     const aiResponse = await generatePersonalizedFinancialAdvice(user, message, area);
     
     // Add AI response to the chat and save
