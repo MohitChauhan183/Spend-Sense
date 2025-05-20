@@ -30,6 +30,7 @@ SpendSense uses AI to analyze user input and generate smart financial recommenda
 
 ## 📷 Screenshots
 ![Screenshot 2025-05-20 122651](https://github.com/user-attachments/assets/29128d47-7432-4e89-be7b-e785494b8142)
+![Screenshot 2025-05-20 123518](https://github.com/user-attachments/assets/21743712-7dc8-4e59-a388-d0fcb0e74dff)
 
 
 
@@ -39,6 +40,7 @@ SpendSense uses AI to analyze user input and generate smart financial recommenda
 # Clone the repo
 git clone https://github.com/MohitChauhan183/Spend-Sense.git
 cd Spend-Sense
+
 
 # Install dependencies (for Node.js-based project)
 npm install
